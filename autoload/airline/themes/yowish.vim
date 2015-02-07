@@ -1,7 +1,7 @@
 " Yowish airline theme.
 
 " Creation     : 2015-01-12
-" Modification : 2015-01-13
+" Modification : 2015-01-24
 " Maintainer   : Kabbaj Amine <amine.kabb@gmail.com>
 " License      : This file is placed in the public domain.
 
@@ -9,23 +9,30 @@
 " Colors
 " *********************
 
-let s:cBackground      = ['#222222' , 235]
-let s:cBackgroundDark  = ['#0e0e0e' , 232]
-let s:cBackgroundLight = ['#393939' , 236]
-let s:cText            = ['#cbcbcb' , 251]
-let s:cTextDark        = ['#bebebe' , 249]
-let s:cTextExtraDark   = ['#8c8c8c' , 244]
-let s:cTextLight       = ['#ebebeb' , 255]
+" Colors[hex, term256] {
+let s:cBackground       = yowish#colors#cBackground
+let s:cBackgroundDark   = yowish#colors#cBackgroundDark
+let s:cBackgroundLight  = yowish#colors#cBackgroundLight
+let s:cText             = yowish#colors#cText
+let s:cTextDark         = yowish#colors#cTextDark
+let s:cTextExtraDark    = yowish#colors#cTextExtraDark
+let s:cTextLight        = yowish#colors#cTextLight
+let s:cSelected         = yowish#colors#cSelected
+let s:cColumnBackground = s:cBackground
+let s:cColumnElements   = yowish#colors#cColumnElements
 
-let s:red              = ['#f01d22' , 160]
-let s:green            = ['#2acf2a' , 40]
-let s:yellow           = ['#ffbe3c' , 215]
+let s:cComment          = yowish#colors#cComment
 
-let s:lightRed         = ['#f2777a' , 203]
-let s:lightGreen       = ['#99cc99' , 108]
-let s:lightYellow      = ['#ffcc66' , 222]
-let s:lightBlue        = ['#6699cc' , 67]
-let s:lightViolet      = ['#d09cea' , 171]
+let s:red               = yowish#colors#red
+let s:green             = yowish#colors#green
+let s:yellow            = yowish#colors#yellow
+
+let s:lightRed          = yowish#colors#lightRed
+let s:lightGreen        = yowish#colors#lightGreen
+let s:lightYellow       = yowish#colors#lightYellow
+let s:lightBlue         = yowish#colors#lightBlue
+let s:lightViolet       = yowish#colors#lightViolet
+" }
 
 " *********************
 " Airline theme settings
@@ -73,9 +80,9 @@ let g:airline#themes#yowish#palette.visual_modified = {
 			\ }
 
 " Inactive(s) window(s).
-let s:IA1 = [ s:cBackgroundLight[0] , 'NONE' , s:cBackgroundLight[1] , 'NONE' , '' ]
-let s:IA2 = [ s:cBackgroundLight[0] , 'NONE' , s:cBackgroundLight[1] , 'NONE' , '' ]
-let s:IA3 = [ s:cBackgroundLight[0] , 'NONE' , s:cBackgroundLight[1] , 'NONE' , '' ]
+let s:IA1 = [ s:cBackgroundLight[0] , s:cBackgroundDark[0] , s:cBackgroundLight[1] , s:cBackgroundDark[1] , '' ]
+let s:IA2 = [ s:cBackgroundLight[0] , s:cBackgroundDark[0] , s:cBackgroundLight[1] , s:cBackgroundDark[1] , '' ]
+let s:IA3 = [ s:cBackgroundLight[0] , s:cBackgroundDark[0] , s:cBackgroundLight[1] , s:cBackgroundDark[1] , '' ]
 let g:airline#themes#yowish#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 let g:airline#themes#yowish#palette.inactive_modified = {
 			\ 'airline_c': [ s:cTextExtraDark[0] , 'NONE' ,s:cTextExtraDark[1] , 'NONE' , 'bold' ] ,
