@@ -2,7 +2,7 @@
 " Version: 0.4
 
 " Creation     : 2015-01-09
-" Modification : 2015-01-24
+" Modification : 2015-03-15
 " Maintainer   : Kabbaj Amine <amine.kabb@gmail.com>
 " License      : This file is placed in the public domain.
 
@@ -63,7 +63,7 @@ call yowish#lib#hi('ErrorMsg'     , s:red               , s:cText            , '
 call yowish#lib#hi('Error'        , 'NONE'              , s:red              , 'bold')
 call yowish#lib#hi('FoldColumn'   , s:cColumnBackground , s:cColumnElements  , 'NONE')
 call yowish#lib#hi('Identifier'   , 'NONE'              , s:lightBlue        , 'NONE')
-call yowish#lib#hi('IncSearch'    , s:yellow            , s:cBackground      , 'bold')
+call yowish#lib#hi('IncSearch'    , s:lightYellow       , s:cBackground      , 'NONE')
 call yowish#lib#hi('LineNr'       , 'NONE'              , s:cBackgroundLight , 'NONE')
 call yowish#lib#hi('MatchParen'   , 'NONE'              , s:yellow           , 'bold')
 call yowish#lib#hi('ModeMsg'      , 'NONE'              , s:yellow           , 'bold')
@@ -73,7 +73,7 @@ call yowish#lib#hi('Pmenu'        , s:cBackgroundLight  , s:cTextDark        , '
 call yowish#lib#hi('PmenuSel'     , s:cBackground       , s:cText            , 'NONE')
 call yowish#lib#hi('PreProc'      , 'NONE'              , s:lightViolet      , 'NONE')
 call yowish#lib#hi('Question'     , 'NONE'              , s:lightGreen       , 'bold')
-call yowish#lib#hi('Search'       , 'black'             , s:lightYellow      , 'bold')
+call yowish#lib#hi('Search'       , s:yellow            , s:cBackgroundDark  , 'bold')
 call yowish#lib#hi('SpecialKey'   , 'NONE'              , s:cBackgroundLight , 'NONE')
 call yowish#lib#hi('Special'      , 'NONE'              , s:cTextLight       , 'NONE')
 call yowish#lib#hi('SpellBad'     , 'NONE'              , 'NONE'             , 'undercurl')
@@ -106,7 +106,8 @@ call yowish#lib#hi('vimOper'      , 'NONE' , s:cText          , 'NONE')
 call yowish#lib#hi('vimOption'    , 'NONE' , s:lightViolet    , 'NONE')
 call yowish#lib#hi('vimString'    , 'NONE' , s:lightGreen     , 'NONE')
 hi! link vimComment Comment
-hi! link VimCommentTitle Comment
+hi! link vimCommentString Comment
+hi! link vimCommentTitle Comment
 hi! link vimEchoHLNone vimOper
 hi! link vimEnvvar vimOption
 hi! link vimFuncVar vimVar
@@ -218,7 +219,7 @@ hi! link sassProp cssProp
 " }
 
 " PHP {
-call yowish#lib#hi('phpIdentifier'     , 'NONE' , s:cTextLight  , 'NONE')
+call yowish#lib#hi('phpIdentifier'     , 'NONE' , s:lightRed  , 'NONE')
 call yowish#lib#hi('phpInclude'        , 'NONE' , s:lightYellow , 'bold')
 call yowish#lib#hi('phpKeyword'        , 'NONE' , s:lightViolet , 'NONE')
 call yowish#lib#hi('phpMemberSelector' , 'NONE' , s:lightYellow , 'NONE')
