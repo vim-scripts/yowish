@@ -1,6 +1,6 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=5083
 
-Yowish is an outlander-like (https://atom.io/themes/outlander-syntax) colorscheme for Vim (GUI & 256-terminal).
+Yowish is a vim dark theme similar to outlander (https://atom.io/themes/outlander-syntax), with some yellow in it :D (Works well on both GUI & 256-colors terminal).
 
 Details & screenshots here > https://github.com/KabbAmine/yowish.vim
 
