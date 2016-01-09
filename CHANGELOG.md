@@ -1,6 +1,23 @@
 CHANGELOG
 =========
 
+0.6.1 <small>(2016-01-09)</small>
+------------------------------
+
+* Update airline themes:
+	- Add warningmsg colors
+	- Fix insert_paste cterm colors
+* Add new screens to the README
+
+------------------------------
+
+0.6.0 <small>(2016-01-08)</small>
+------------------------------
+
+* Add a global variable `g:yowish` for user configuration
+* Add a new airline theme called *yowishU*
+* Small refactoring and code cleaning
+
 ------------------------------
 
 v0.5.5 <small>(2015-11-21)</small>

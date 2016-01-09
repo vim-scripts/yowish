@@ -1,12 +1,14 @@
-# Yowish, a yellowish dark vim colorscheme
+# Yowish<small>, a yellowish dark vim colorscheme</small> [![GitHub version](https://badge.fury.io/gh/KabbAmine%2Fyowish.vim.svg)](https://badge.fury.io/gh/KabbAmine%2Fyowish.vim)
 
-[![GitHub version](https://badge.fury.io/gh/KabbAmine%2Fyowish.vim.svg)](https://badge.fury.io/gh/KabbAmine%2Fyowish.vim)
+-------------------------
 
 ## Description
 
 Yowish is a vim dark theme similar to [outlander](https://atom.io/themes/outlander-syntax), with some yellow in it :smiley: (Works well on both GUI & 256-colors terminal).
 
 ![Viml code](.img/viml.png "A vimscript sample")
+
+It's a theme, and a theme needs [screens](#screens).
 
 ## GUI vs terminal
 
@@ -18,17 +20,7 @@ Here is a comparison between GVim and xfce-terminal with a standard color palett
 
 ## Supported file types
 
-Logically, any file type should be good looking, but the following ones are more customized than others:
-
-- `css`
-- `html`
-- `jade`
-- `javascript`
-- `markdown`
-- `php`
-- `ruby`
-- `sass` & `scss`
-- `vim` & `vimhelp`
+Normally, any file type should be good looking, but some are more customized than others, check the [screens](#screens).
 
 ## Syntax plugins
 
@@ -54,9 +46,13 @@ The theme provides custom colors for:
 
   ![NERDTree](.img/nerdtree.jpg "NERDTree")
 
-* And an [airline](https://github.com/bling/vim-airline) theme
+* And 2 [airline](https://github.com/bling/vim-airline) themes:
 
+  * yowish
   ![Yowish theme for Airline](.img/airline.jpg "Different vim modes in airline with yowish")
+
+  * yowishU (*U for Unity*)
+  ![YowishU theme for Airline](.img/airline-yowishU.jpg "Different vim modes in airline with yowishU")
 
 ## Installation
 
@@ -69,6 +65,65 @@ Or in a better way, use a vim plugin manager:
 | [Vim-plug](https://github.com/junegunn/vim-plug)       | `Plug 'KabbAmine/yowish.vim'`      | `PlugInstall`          |
 | [Vundle](https://github.com/gmarik/Vundle.vim)         | `Plugin 'KabbAmine/yowish.vim'`    | `PluginInstall`        |
 | [NeoBundle](https://github.com/Shougo/neobundle.vim)   | `NeoBundle 'KabbAmine/yowish.vim'` | `NeoBundleInstall`     |
+
+## Configuration
+
+The user configuration is stocked in a global dictionary `g:yowish` where:
+
+| key                       | default value             | description                             |
+| ------------------------- | ------------------------- | --------------------------------        |
+| `term_italic`             | `0`                       | Enable(1)/Disable(0) italic in terminal |
+
+Currently, only one option is present, but this will change in the future.
+
+e.g
+
+```
+let g:yowish = {}
+let g:yowish.term_italic = 1
+
+" Or
+
+let g:yowish = {
+			\ 'term_italic': 1,
+			\ }
+```
+
+## Screens <a id="screens"></a>
+
+Feel free to add screens for other file types.
+
+`css`
+
+![Css sample](.img/css.jpg)
+
+`html`
+
+![Html sample](.img/html.jpg)
+
+`jade`
+
+![Jade sample](.img/jade.jpg)
+
+`javascript`
+
+![Javascript sample](https://cloud.githubusercontent.com/assets/5658084/10515974/a5aafeac-735e-11e5-94e2-a7b82c5cbf10.png)
+
+`php`
+
+![Php sample](.img/php.jpg)
+
+`ruby`
+
+![Ruby sample thanks to @](https://cloud.githubusercontent.com/assets/5658084/10513493/a101f53a-7350-11e5-9abb-1e014a8c294f.png)
+
+`scss`
+
+![Scss sample](.img/scss.jpg)
+
+`sh`
+
+![Sh sample](.img/sh.jpg)
 
 ## Notes
 
@@ -87,7 +142,6 @@ And if you're asking yourself, yeah I like yellow :smile:
   - [ ] `c`
   - [ ] `java`
 - A simple html page for screenshots
-- A light theme?
 
 ## Thanks
 
